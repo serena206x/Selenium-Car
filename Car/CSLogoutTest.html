@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>CSLogoutTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CSLogoutTest</td></tr>
+</thead>
+<tr>
+	<td>open</td>
+	<td>http://192.168.1.27:8087/car/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@class='hearderBar_user']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//span[@id='userInfoLink']</td>
+	<td>王洋</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='dropdown-menu-userinfo']/li[2]/ul/li[5]/a/span</td>
+	<td>退出登录</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='dropdown-menu-userinfo']/li[2]/ul/li[5]/a/span</td>
+	<td>退出登录</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//input[@id='j_username']</td>
+	<td>liuyongle</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@id='j_password']</td>
+	<td>123</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>MSApplicationTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MSApplicationTest</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>http://192.168.1.27:8087/car/ </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//ul[@id='sidebar']/li/a/span</td>
+	<td>面审申请单</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='sidebar']/li/a/span</td>
+	<td>面审申请单</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//ul[@id='sidebar']/li/ul/li/a</td>
+	<td>进件任务</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='sidebar']/li/ul/li/a</td>
+	<td>面审申请单</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_0cardname_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_0cardname_unieap_input']</td>
+	<td>宋二四</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_0button2_unieap_input']</td>
+	<td>查询</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//input[@name='radio_unieapx_layout_NavigatorPane_0grid1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='radio_unieapx_layout_NavigatorPane_0grid1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_0button1_unieap_input']</td>
+	<td>新增</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_1button1_unieap_input']</td>
+	<td>校验</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_1button1_unieap_input']</td>
+	<td>校验</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//label[@id='unieapx_layout_NavigatorPane_1label1']</td>
+	<td>验证成功</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_1button3_unieap_input']</td>
+	<td>校验</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//label[@id='unieapx_layout_NavigatorPane_1label2']</td>
+	<td>验证成功</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_1button5_unieap_input']</td>
+	<td>下一步</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2applyamount_unieap_input']</td>
+	<td>申请面额</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2rebatename_unieap_input']</td>
+	<td>代收反点</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2hascor_unieap_input']</td>
+	<td>是否存在共借人</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2applyamount_unieap_input']</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2repayment_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_4']/div[2]/table/tbody/tr/td/span</td>
+	<td>先息后本</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2repayment_unieap_input']</td>
+	<td>先息后本</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='unieapx_layout_NavigatorPane_2rebatename']/div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_5']/div[2]/table/tbody/tr/td/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_5']/div[2]/table/tbody/tr/td/span</td>
+	<td>2%</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2rebatename_unieap_input']</td>
+	<td>2%</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='unieapx_layout_NavigatorPane_2gpstagefee']/div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_7']/div[2]/table/tbody/tr/td/span</td>
+	<td>120元/月</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_7']/div[2]/table/tbody/tr/td/span</td>
+	<td>120元/月</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2gpstagefee_unieap_input']</td>
+	<td>120元/月</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='unieapx_layout_NavigatorPane_2hascor']/div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_6']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>否</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_6']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>否</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2hascor_unieap_input']</td>
+	<td>否</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='unieapx_layout_NavigatorPane_2purchasemethod']/div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_8']/div[2]/table/tbody/tr/td/span</td>
+	<td>自有住房</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_8']/div[2]/table/tbody/tr/td/span</td>
+	<td>自有住房</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2purchasemethod_unieap_input']</td>
+	<td>自有住房</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2stayaddress_unieap_input']</td>
+	<td>辽宁省沈阳市浑南区上深沟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='unieapx_layout_NavigatorPane_2staydate']/div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='calendar1472527704321']/table/tbody/tr[5]/td[3]</td>
+	<td>29</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='calendar1472527704321']/table/tbody/tr[5]/td[3]</td>
+	<td>29</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='calendar1472527704321']/table/tbody/tr[5]/td[3]</td>
+	<td>29</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_2staydate_unieap_input']</td>
+	<td>29</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

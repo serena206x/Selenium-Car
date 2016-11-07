@@ -1,0 +1,384 @@
+<html>
+<head>
+<title>CSAddBillsTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CSAddBillsTest</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>http://192.168.1.27:8087/car/ </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[@id='leftmenu-trigger']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=客服流转单</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=进件搜索</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@class='unieap_menu unieap_menu_icon']</td>
+	<td>客服流转单</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@class='acc-menu']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@class='acc-menu']/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@class='u-titlepane-title']</td>
+	<td>信息查询</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[@class='u-titlepane-titlenode']</td>
+	<td>查询列表</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_0button4_unieap_input']</td>
+	<td>新增</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_0button4_unieap_input']</td>
+	<td>新增</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//form[@id='unieapx_layout_NavigatorPane_1form1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1cardname_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1phone_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1police_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1passportno_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1cardname_unieap_input']</td>
+	<td>宋月末</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1cardname_unieap_input']</td>
+	<td>宋月末</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1phone_unieap_input']</td>
+	<td>18080808023</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1phone_unieap_input']</td>
+	<td>18080808023</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>xpath=(//input[@type='radio'])[2]</td>
+	<td>女</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>xpath=(//input[@type='radio'])[2]</td>
+	<td>女</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1domicile_unieap_input']</td>
+	<td>辽宁省沈阳市浑南新区</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1domicile_unieap_input']</td>
+	<td>辽宁省沈阳市浑南新区</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1born_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1nation_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1nation_unieap_input']</td>
+	<td>汉族</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_3']/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_3']/div[2]/table/tbody/tr/td</td>
+	<td>汉族</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_3']/div[2]/table/tbody/tr/td</td>
+	<td>汉族</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1nation_unieap_input']</td>
+	<td>汉族</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1police_unieap_input']</td>
+	<td>辽宁省沈阳市浑南派出所</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1passportno_unieap_input']</td>
+	<td>110101198001010096</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1brand_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_4']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>(A) 阿斯顿·马丁</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_4']/div[2]/table/tbody/tr[2]/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_4']/div[2]/table/tbody/tr[2]/td</td>
+	<td>(A) 阿斯顿·马丁</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1car_unieap_input']</td>
+	<td>DB11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1carcode_unieap_input']</td>
+	<td>LA88888</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1itemcode_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_5']/div[2]/table/tbody/tr/td</td>
+	<td>G时贷</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_5']/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_5']/div[2]/table/tbody/tr/td</td>
+	<td>G时贷</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1itemcode_unieap_input']</td>
+	<td>G时贷</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1period_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_6']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>3月</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_6']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_6']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>3月</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>xpath=(//input[@type='radio'])[5]</td>
+	<td>个人</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1slpmanager_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_7']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>林晓华</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_7']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>林晓华</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_7']/div[2]/table/tbody/tr[2]/td/span</td>
+	<td>林晓华</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1slpmanager_unieap_input']</td>
+	<td>林晓华</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1slpcode_unieap_input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_2']/div[2]/table/tbody/tr/td/span</td>
+	<td>王小丽</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_2']/div[2]/table/tbody/tr/td/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='unieap_form_ComboBoxPopup_2']/div[2]/table/tbody/tr/td/span</td>
+	<td>王小丽</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//input[@id='unieapx_layout_NavigatorPane_1slpcode_unieap_input']</td>
+	<td>王小丽</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@type='radio'])[8]</td>
+	<td>否</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@id='unieapx_layout_NavigatorPane_1memo_unieap_input']</td>
+	<td>暂无备注</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//button[@id='unieapx_layout_NavigatorPane_1button1_unieap_input']</td>
+	<td>保存</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//td[@class='infoIcon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='unieap_form_Button_0_unieap_input']</td>
+	<td>确定</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

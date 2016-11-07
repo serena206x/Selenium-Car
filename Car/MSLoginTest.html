@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>MSLoginTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MSLoginTest</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>http://192.168.1.27:8087/car/ </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//table[@id='tableheight']/tbody/tr/td/div/div/div/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='j_username']</td>
+	<td>songwanxin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='j_password']</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@onclick='submit_form()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@class='hearderBar_user']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//span[@id='userInfoLink']</td>
+	<td>宋婉馨</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='headerbar']</td>
+	<td>客服流转单</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
